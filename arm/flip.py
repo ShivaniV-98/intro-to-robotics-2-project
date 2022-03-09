@@ -328,11 +328,15 @@ class Move():
                         time.sleep(1)
 
                         
-                        servo2_angle = getAngle(self.state.world_X, self.state.world_Y, 200)    # flip block
+                        servo2_angle = getAngle(self.state.world_X, self.state.world_Y, 200)    # flip block  FLIP 1
                         Board.setBusServoPulse(2, 90, 500)
-                        time.sleep(0.5)
+                        time.sleep(10)
                         
+                        Board.setBusServoPulse(2, 90, 500)           # FLIP 2
+                        time.sleep(10)
                         
+                        Board.setBusServoPulse(2, 90, 500)           # FLIP 3
+                        time.sleep(10)
                      
                        
 

@@ -328,50 +328,13 @@ class Move():
                         time.sleep(1)
 
                         
-                        servo2_angle = getAngle(world_X, world_Y, 90) #flip block
+                        servo2_angle = getAngle(world_X, world_Y, 90)    # flip block
                         Board.setBusServoPulse(2, servo2_angle, 500)
                         time.sleep(0.5)
                         
                         
-                     #if not self.state.isRunning:
-                            #continue
-                     '''self.state.AK.setPitchRangeMoving(
-                            (coordinate[self.state.detect_color][0], coordinate[self.state.detect_color][1], 12), -90,
-                            -90, 0, 1500)
-                        time.sleep(1.5)
-
-                        if not self.state.isRunning:
-                            continue
-                        servo2_angle = getAngle(coordinate[self.state.detect_color][0],
-                                                coordinate[self.state.detect_color][1], -90)
-                        Board.setBusServoPulse(2, servo2_angle, 500)
-                        time.sleep(0.5)
-
-                        if not self.state.isRunning:
-                            continue
-                        self.state.AK.setPitchRangeMoving(
-                            (coordinate[self.state.detect_color][0], coordinate[self.state.detect_color][1], z + 3),
-                            -90, -90, 0, 500)
-                        time.sleep(0.5)
-
-                        if not self.state.isRunning:
-                            continue
-                        self.state.AK.setPitchRangeMoving(
-                            (coordinate[self.state.detect_color][0], coordinate[self.state.detect_color][1], z), -90,
-                            -90, 0, 1000)
-                        time.sleep(0.8)
-
-                        if not self.state.isRunning:
-                            continue
-                        Board.setBusServoPulse(1, self.state.servo1 - 200, 500)  # 爪子张开  ，放下物体
-                        time.sleep(1)
-
-                        if not self.state.isRunning:
-                            continue
-                        self.state.AK.setPitchRangeMoving(
-                            (coordinate[self.state.detect_color][0], coordinate[self.state.detect_color][1], 12), -90,
-                            -90, 0, 800)
-                        time.sleep(0.8)'''
+                     
+                       
 
                         self.state.init()  # 回到初始位置
                         time.sleep(1.5)

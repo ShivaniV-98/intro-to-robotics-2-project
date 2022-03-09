@@ -338,7 +338,11 @@ class Move():
                         Board.setBusServoPulse(2, 270, 500)           # FLIP 3
                         time.sleep(5)
                      
-                       
+                        if not self.state.isRunning:
+                            continue 
+                        self.state.AK.setPitchRangeMoving((self.state.world_X, self.state.world_Y, 12), -90, -90, 0, 800)
+                        time.sleep(0.8)
+
 
                         #self.state.init() 
                         #time.sleep(1.5)

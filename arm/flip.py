@@ -328,15 +328,15 @@ class Move():
                         time.sleep(1)
 
                         
-                        #servo2_angle = getAngle(self.state.world_X, self.state.world_Y, 90)    # flip block
-                        #Board.setBusServoPulse(2, servo2_angle, 500)
-                        #time.sleep(0.5)
+                        servo2_angle = getAngle(self.state.world_X, self.state.world_Y, 200)    # flip block
+                        Board.setBusServoPulse(2, 90, 500)
+                        time.sleep(0.5)
                         
                         
                      
                        
 
-                        #self.state.init()  # 回到初始位置
+                        #self.state.init() 
                         #time.sleep(1.5)
 
                         self.state.detect_color = 'None'

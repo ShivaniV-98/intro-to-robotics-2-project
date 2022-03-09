@@ -338,10 +338,10 @@ class Move():
                         self.state.AK.setPitchRangeMoving((0, 18, 2), -90, -90, 0, 800)
                         time.sleep(0.8)
                         
-                        if not self.state.isRunning:
-                            continue
-                        Board.setBusServoPulse(1, self.state.servo1, 500)  # gripper colsed
-                        time.sleep(0.8)
+                        #if not self.state.isRunning:
+                            #continue
+                        #Board.setBusServoPulse(1, self.state.servo1, 500)  # gripper colsed
+                        #time.sleep(0.8)
 
                         #self.state.init() 
                         #time.sleep(1.5)

@@ -333,7 +333,7 @@ class Move():
                         time.sleep(0.5)
                         
                         
-                       ''' if not self.state.isRunning:
+                     '''if not self.state.isRunning:
                             continue
                         self.state.AK.setPitchRangeMoving(
                             (coordinate[self.state.detect_color][0], coordinate[self.state.detect_color][1], 12), -90,

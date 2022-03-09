@@ -105,7 +105,7 @@ class Move():
                         Board.setBusServoPulse(2, servo2_angle, 500)
                         time.sleep(0.5)
 
-                        if not self.state.isRunning:
+                        '''if not self.state.isRunning:
                             continue
                         # 对不同颜色方块进行分类放置
                         result = self.state.AK.setPitchRangeMoving(
@@ -143,7 +143,7 @@ class Move():
                         self.state.AK.setPitchRangeMoving(
                             (coordinate[self.state.detect_color][0], coordinate[self.state.detect_color][1], 12), -90,
                             -90, 0, 800)
-                        time.sleep(0.8)
+                        time.sleep(0.8) '''
 
                         self.state.init()  # reset servos
                         time.sleep(1.5)

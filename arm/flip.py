@@ -330,7 +330,7 @@ class Move():
                         
                         servo2_angle = getAngle(self.state.world_X, self.state.world_Y, 200)    # flip block  FLIP 1
                         Board.setBusServoPulse(2, 90, 500)
-                        time.sleep(5)
+                        time.sleep(1)
                         
                      
                         if not self.state.isRunning:

@@ -336,8 +336,8 @@ class Move():
                      
                        
 
-                        self.state.init()  # 回到初始位置
-                        time.sleep(1.5)
+                        #self.state.init()  # 回到初始位置
+                        #time.sleep(1.5)
 
                         self.state.detect_color = 'None'
                         self.state.get_roi = False

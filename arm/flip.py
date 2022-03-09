@@ -340,7 +340,7 @@ class Move():
                         
                         if not self.state.isRunning:
                             continue
-                        Board.setBusServoPulse(1, servo1, 500)  # gripper colsed
+                        Board.setBusServoPulse(1, self.state.servo1, 500)  # gripper colsed
                         time.sleep(0.8)
 
                         #self.state.init() 

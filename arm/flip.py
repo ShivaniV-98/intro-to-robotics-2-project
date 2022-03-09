@@ -335,7 +335,7 @@ class Move():
                      
                         if not self.state.isRunning:
                             continue 
-                        self.state.AK.setPitchRangeMoving((0, 0, 0), -90, -90, 0, 800)
+                        self.state.AK.setPitchRangeMoving((0, 18, 0), -90, -90, 0, 800)
                         time.sleep(0.8)
 
 

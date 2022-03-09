@@ -332,11 +332,6 @@ class Move():
                         Board.setBusServoPulse(2, 90, 500)
                         time.sleep(5)
                         
-                        Board.setBusServoPulse(2, 180, 500)           # FLIP 2
-                        time.sleep(5)
-                        
-                        Board.setBusServoPulse(2, 270, 500)           # FLIP 3
-                        time.sleep(5)
                      
                         if not self.state.isRunning:
                             continue 
